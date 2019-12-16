@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Creating a Json</title>
+    </head>
+
+    <body>
+<div id ="demo">    
+</div>
+<script type ="text/javascript">
+var myarray = [
+
+{"Car": ["MG","Fiat", "Maruthi"], "Model":1999, "KM": 1200},
+{"Car": ["MG2","Fiat", "Maruthi"], "Model":1998, "KM": 1200},
+{"Car":["MG3","Fiat", "Maruthi"], "Model":1979, "KM": 1200}
+
+];
+
+var myObj = {
+    "name": "Vera",
+    "age": 30,
+    "Alive": true,
+    "children": ["Ram "," Bindu" ],
+    "disease ": null,
+    "SkillSet":{"Language":"Java", "DB":"Oracle", "framework":"Spring" },
+    "ArrayOfObjects": myarray
+};
+/*alert(myObj.name);
+alert(myObj.age);
+alert(myObj.children);
+alert(myObj.disease);*/
+let value = "";
+let SkillSets = "";
+SkillSets = myObj.SkillSet.Language + " " + myObj.SkillSet.framework + " ";
+var child = "";
+for ( i in myObj.children){
+child += myObj.children[i];
+}
+
+//value += myObj[x] + " ";
+var data = "";
+for(x in myObj.ArrayOfObjects){
+    data += "<h1>" + myObj.ArrayOfObjects[i].Model+ "</h1>";
+for(j in myObj.ArrayOfObjects[i].Car){
+data += myObj.ArrayOfObjects[i].Car[j] + "  $   ";
+}
+}
+//Convert JS to JSON string.
+//.. If the name is without doble quotes then it is JS object
+var myJs = [{ name : "Vathi", age: 30},
+{name :"Sh", age : 31}
+];
+var myJSONObjStr ="";
+for( k in myJs)
+{
+    myJSONObjStr +=JSON.stringify(myJs[k]);
+}
+
+var hello = '(document.getElementById("demo").innerHTML=myJSONObjStr)';
+
+var myJSONObj = '{"name": "Vera", "age": 30,"Alive": true}';
+//var parse= JSON.parse(hello);
+
+
+var officers = [
+{ id : 1, age : 40},{id : 2, age : 40},{id:3, age:45}
+];
+
+var officerId =[];
+ officers.forEach(function (officer){
+    officerId.push(officer.id)
+
+});
+console.log(officerId);
+document.getElementById("demo").innerHTML=officerId;
+</script>
+    </body>
+</html>
