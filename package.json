@@ -2,7 +2,7 @@
   "name": "frontend-repo",
   "version": "1.0.0",
   "description": "This is a test repository",
-  "main": "index.html",
+  "main": "abotus.html",
   "scripts": {
     "test": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C)",
     "start": "npm run lite",
