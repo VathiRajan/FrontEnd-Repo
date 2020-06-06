@@ -2,7 +2,7 @@
   "name": "frontend-repo",
   "version": "1.0.0",
   "description": "This is a test repository",
-  "main": "abotus.html",
+  "main": "index.html",
   "scripts": {
     "test": "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C)",
     "start": "npm run lite",
@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/VathiRajan/FrontEnd-Repo#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "bootstrap": "^4.4.1",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.4.1",
     "lite-server": "^2.5.4",
     "popper.js": "^1.16.1",
